@@ -1,0 +1,97 @@
+{
+    "general": {
+        "websiteName": "Mycogen Admin",
+        "description": "Dashboard system for content, members and store management.",
+        "language": "English",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "theme": "Light",
+        "status": "Active"
+    },
+    "notifications": {
+        "email": true,
+        "order": true,
+        "review": false,
+        "loginAlert": true
+    },
+    "members": [
+        {
+            "name": "Alice Smith",
+            "username": "@alicesmith",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Alice",
+            "status": "Online",
+            "joinDate": "Jan 12, 2025",
+            "lastActive": "June 25, 2026",
+            "role": "Admin",
+            "checked": false
+        },
+        {
+            "name": "Bob Johnson",
+            "username": "@bobjohnson",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Bob",
+            "status": "Online",
+            "joinDate": "Jan 11, 2025",
+            "lastActive": "June 25, 2026",
+            "role": "Editor",
+            "checked": true
+        },
+        {
+            "name": "Clara Garcia",
+            "username": "@claragarcia",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Clara",
+            "status": "Offline",
+            "joinDate": "Jan 11, 2025",
+            "lastActive": "June 22, 2026",
+            "role": "Viewer",
+            "checked": false
+        },
+        {
+            "name": "David Brown",
+            "username": "@davidbrown",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=David",
+            "status": "Online",
+            "joinDate": "Jan 10, 2025",
+            "lastActive": "June 25, 2026",
+            "role": "Viewer",
+            "checked": false
+        },
+        {
+            "name": "Mai Sakurajima Senpai",
+            "username": "@maisenpai",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Mai",
+            "status": "Banned",
+            "joinDate": "Jan 9, 2025",
+            "lastActive": "June 20, 2026",
+            "role": "Viewer",
+            "checked": true
+        },
+        {
+            "name": "Frank Wong",
+            "username": "@frankwong",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Frank",
+            "status": "Offline",
+            "joinDate": "Jan 8, 2025",
+            "lastActive": "June 20, 2026",
+            "role": "Editor",
+            "checked": true
+        },
+        {
+            "name": "Grace Taylor",
+            "username": "@gracetaylor",
+            "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=Grace",
+            "status": "Online",
+            "joinDate": "Jan 6, 2025",
+            "lastActive": "June 25, 2026",
+            "role": "Admin",
+            "checked": false
+        },
+        {
+    "name": "Sam Sam",
+    "username": "@samsam",
+    "avatar": "https://api.dicebear.com/9.x/personas/svg?seed=SamSam",
+    "status": "Online",
+    "joinDate": "Jan 01, 2025",
+    "lastActive": "Just now",
+    "role": "Administrator"
+}
+    ]
+}
