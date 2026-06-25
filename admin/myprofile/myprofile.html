@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile-extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<div class="admin-dashboard">
+
+    <aside class="sidebar">
+        <div>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>Mycogen</span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-cube nav-icon"></i>
+                    Product Management
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    Order Management
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-user nav-icon"></i>
+                    Customer Management
+                </a>
+
+                <div class="nav-section-title">Content & Engagement</div>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-file-lines nav-icon"></i>
+                    Blog Management
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-image nav-icon"></i>
+                    Banner Management
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-bell nav-icon"></i>
+                    Notifications & Campaigns
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-star nav-icon"></i>
+                    Product Reviews
+                </a>
+
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-comments nav-icon"></i>
+                    Community Q&A
+                </a>
+
+                <div class="nav-section-title">System Settings</div>
+
+                <a href="../system setting/setting.html" class="nav-item">
+                    <i class="fa-solid fa-gear nav-icon"></i>
+                    System Settings
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-profile" id="sidebarProfileCard">
+            <img id="sidebarAvatar" src="" alt="Current user">
+
+            <div class="profile-info">
+                <div class="profile-name" id="sidebarName"></div>
+                <div class="profile-role" id="sidebarRole"></div>
+            </div>
+
+            <i class="fa-solid fa-chevron-down" id="profileArrow"></i>
+
+            <div class="profile-menu" id="profileMenu">
+                <button class="profile-menu-item" id="logoutBtn">
+                    <i class="fa-solid fa-power-off"></i>
+                    Log out
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchProfile" placeholder="Search employee profile...">
+            </div>
+
+            <div class="notification" id="notificationBtn">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-badge">8</span>
+
+                <div class="notification-panel" id="notificationPanel">
+                    <div class="notification-header">
+                        <h3>Notifications</h3>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    <div class="notification-tabs">
+                        <button class="active">All</button>
+                        <button>Unread</button>
+                    </div>
+
+                    <div class="notification-list">
+                        <div class="notification-item">
+                            <div class="notification-avatar">🍰</div>
+                            <div>
+                                <h4>New order received</h4>
+                                <p>2 minutes ago</p>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-avatar">👩</div>
+                            <div>
+                                <h4>Alice completed order #1052</h4>
+                                <p>10 minutes ago</p>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-avatar">⚠️</div>
+                            <div>
+                                <h4>Low stock: Croissant</h4>
+                                <p>Today</p>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-avatar">⭐</div>
+                            <div>
+                                <h4>Customer left 5-star review</h4>
+                                <p>Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="view-all-btn">View all notifications</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="page-header">
+            <div>
+                <h1>My Profile</h1>
+                <p>View bakery employee information, performance and recent activities.</p>
+            </div>
+        </section>
+
+        <section class="profile-page-layout">
+
+            <div class="profile-card profile-summary-card">
+                <img id="profileAvatar" class="profile-main-avatar" src="" alt="Employee Avatar">
+
+                <h2 id="profileName"></h2>
+                <p id="profileRole"></p>
+
+                <span id="profileStatus" class="member-status online"></span>
+
+                <div class="profile-mini-info">
+                    <div>
+                        <strong id="profileEmployeeId"></strong>
+                        <span>Employee ID</span>
+                    </div>
+
+                    <div>
+                        <strong id="profileBranch"></strong>
+                        <span>Branch</span>
+                    </div>
+
+                    <div>
+                        <strong id="profileShift"></strong>
+                        <span>Shift</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <h2>Employee Information</h2>
+
+                <div class="profile-info-grid">
+                    <div>
+                        <label>Email</label>
+                        <p id="profileEmail"></p>
+                    </div>
+
+                    <div>
+                        <label>Phone</label>
+                        <p id="profilePhone"></p>
+                    </div>
+
+                    <div>
+                        <label>Gender</label>
+                        <p id="profileGender"></p>
+                    </div>
+
+                    <div>
+                        <label>Birthday</label>
+                        <p id="profileBirthday"></p>
+                    </div>
+
+                    <div>
+                        <label>Hire Date</label>
+                        <p id="profileHireDate"></p>
+                    </div>
+
+                    <div>
+                        <label>Address</label>
+                        <p id="profileAddress"></p>
+                    </div>
+                </div>
+
+                <div class="profile-bio">
+                    <label>Bio</label>
+                    <p id="profileBio"></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="profile-stats-grid">
+            <div class="profile-stat-card">
+                <i class="fa-solid fa-receipt"></i>
+                <div>
+                    <h3 id="statOrders"></h3>
+                    <p>Total Orders</p>
+                </div>
+            </div>
+
+            <div class="profile-stat-card">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <div>
+                    <h3 id="statRevenue"></h3>
+                    <p>Monthly Revenue</p>
+                </div>
+            </div>
+
+            <div class="profile-stat-card">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <h3 id="statRating"></h3>
+                    <p>Customer Rating</p>
+                </div>
+            </div>
+
+            <div class="profile-stat-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <div>
+                    <h3 id="statAttendance"></h3>
+                    <p>Attendance</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-bottom-grid">
+
+            <div class="profile-card">
+                <h2>Skills</h2>
+                <div id="skillsList"></div>
+            </div>
+
+            <div class="profile-card">
+                <h2>Recent Activities</h2>
+                <div id="activitiesList"></div>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="../system setting/js/systemsetting.js"></script>
+</body>
+</html>
