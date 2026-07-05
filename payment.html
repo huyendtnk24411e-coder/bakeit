@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Đơn Hàng - Bake It!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFBF7] flex flex-col min-h-screen font-sans antialiased text-stone-800">
+
+    <!-- HEADER ĐỒNG BỘ MÀU NÂU #5a2d16 -->
+    <header class="bg-[#5a2d16] text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-4 w-1/4">
+                <img src="../logo.jpg" alt="Logo" class="h-10 w-40 object-cover rounded bg-stone-200">
+            </div>
+            
+            <div class="flex-1 max-w-xl mx-4">
+                <div class="relative">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." class="w-full bg-white text-stone-800 pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-sm">
+                    <button class="absolute right-3 top-2.5 text-stone-400 hover:text-[#82aac4] transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-5 justify-end w-1/4">
+                <a href="#" class="relative p-1 hover:text-[#82aac4] transition">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-[#D96B43] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+                </a>
+                <div class="text-sm font-medium text-white bg-[#3d1e0e]/50 px-3 py-1 rounded border border-[#ccb186]/30">
+                    @ratatouille06
+                </div>
+                <img src="../avt.jpg" alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover bg-stone-300 shrink-0">
+            </div>
+        </div>
+        
+        <!-- SUB NAVIGATION -->
+        <div class="bg-[#f2eae1] border-b border-[#ccb186]/30 text-stone-600 text-sm font-medium">
+            <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-16 py-2.5">
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Trang chủ</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Sản phẩm <i class="fa-solid fa-caret-down ml-1 text-xs"></i></a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Blog</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">About us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- LEFT COLUMN: Checkout Info (Chiếm 2 phần) -->
+        <div class="lg:col-span-2 space-y-6">
+            
+            <!-- Section 1: Tóm tắt sản phẩm đang thanh toán (ĐÃ ĐIỀN ẢNH KHUÔN TART) -->
+            <section class="bg-white rounded-2xl border border-stone-200/60 shadow-sm p-4 flex items-center space-x-4">
+                <div class="w-16 h-16 bg-stone-50 rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0">
+                    <img src="../combo 5 khuôn làm bánh tart trứng.jpg" alt="Combo 5 khuôn làm bánh tart trứng" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-bold text-stone-800 truncate">Combo 5 khuôn làm bánh Tart trứng / Chiffon chống dính</h3>
+                    <p class="text-xs text-stone-400 mt-0.5">Phân loại: Size 10cm | Số lượng: 2</p>
+                    <p class="text-sm font-bold text-[#5a2d16] mt-1">240.000đ</p>
+                </div>
+            </section>
+
+            <!-- Section 2: Form điền thông tin nhận hàng -->
+            <section class="bg-white rounded-2xl border border-stone-200/60 shadow-sm p-6 space-y-4">
+                <h3 class="text-base font-bold text-[#5a2d16] flex items-center border-b border-stone-100 pb-2">
+                    <i class="fa-solid fa-location-dot mr-2 text-[#82aac4]"></i> Thông tin nhận hàng
+                </h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Họ và tên" value="Ratatouille" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                    <input type="text" placeholder="Số điện thoại" value="0378460644" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                </div>
+                
+                <input type="email" placeholder="Email (Không bắt buộc)" value="ratatouille06@gmail.com" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <select class="w-full bg-stone-50 border border-stone-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-stone-600"><option>Hồ Chí Minh</option></select>
+                    <select class="w-full bg-stone-50 border border-stone-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-stone-600"><option>Quận 1</option></select>
+                    <select class="w-full bg-stone-50 border border-stone-200 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-stone-600"><option>Phường Bến Nghé</option></select>
+                </div>
+                
+                <input type="text" placeholder="Địa chỉ cụ thể (Số nhà, tên đường)" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                <textarea placeholder="Ghi chú thêm (Ví dụ: Giao giờ hành chính, gọi trước khi giao...)" rows="2" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#82aac4]"></textarea>
+            </section>
+
+            <!-- Section 3: Phương thức thanh toán -->
+            <section class="bg-white rounded-2xl border border-stone-200/60 shadow-sm p-6 space-y-3">
+                <h3 class="text-base font-bold text-[#5a2d16] flex items-center border-b border-stone-100 pb-2 mb-2">
+                    <i class="fa-solid fa-credit-card mr-2 text-[#82aac4]"></i> Phương thức thanh toán
+                </h3>
+                
+                <!-- COD -->
+                <label class="flex items-center justify-between p-3 border border-stone-200 rounded-xl cursor-pointer hover:bg-stone-50 transition">
+                    <div class="flex items-center space-x-3 text-sm font-medium text-stone-700">
+                        <input type="radio" name="payment" checked class="w-4 h-4 text-[#5a2d16] focus:ring-[#5a2d16]">
+                        <span class="w-8 h-8 bg-[#f2eae1] rounded-lg flex items-center justify-center text-[#5a2d16]"><i class="fa-solid fa-money-bill-wave"></i></span>
+                        <span>Thanh toán khi nhận hàng (COD)</span>
+                    </div>
+                </label>
+
+                <!-- Visa/Mastercard -->
+                <label class="flex items-center justify-between p-3 border border-stone-200 rounded-xl cursor-pointer hover:bg-stone-50 transition">
+                    <div class="flex items-center space-x-3 text-sm font-medium text-stone-700">
+                        <input type="radio" name="payment" class="w-4 h-4 text-[#5a2d16] focus:ring-[#5a2d16]">
+                        <span class="w-8 h-8 bg-[#f2eae1] rounded-lg flex items-center justify-center text-[#5a2d16]"><i class="fa-solid fa-credit-card"></i></span>
+                        <span>Thẻ tín dụng / Ghi nợ (Visa, Mastercard)</span>
+                    </div>
+                </label>
+
+                <!-- MoMo -->
+                <label class="flex items-center justify-between p-3 border border-stone-200 rounded-xl cursor-pointer hover:bg-stone-50 transition">
+                    <div class="flex items-center space-x-3 text-sm font-medium text-stone-700">
+                        <input type="radio" name="payment" class="w-4 h-4 text-[#5a2d16] focus:ring-[#5a2d16]">
+                        <span class="w-8 h-8 bg-[#A50064] text-white rounded-lg flex items-center justify-center font-bold text-[10px]">MoMo</span>
+                        <span>Ví điện tử MoMo</span>
+                    </div>
+                </label>
+
+                <!-- Bank QR -->
+                <label class="flex items-center justify-between p-3 border border-stone-200 rounded-xl cursor-pointer hover:bg-stone-50 transition">
+                    <div class="flex items-center space-x-3 text-sm font-medium text-stone-700">
+                        <input type="radio" name="payment" class="w-4 h-4 text-[#5a2d16] focus:ring-[#5a2d16]">
+                        <span class="w-8 h-8 bg-[#f2eae1] rounded-lg flex items-center justify-center text-[#5a2d16]"><i class="fa-solid fa-qrcode"></i></span>
+                        <span>Chuyển khoản ngân hàng (QR Code nhanh)</span>
+                    </div>
+                </label>
+            </section>
+
+            <!-- Section 4: Sản phẩm gợi ý thêm -->
+            <div class="space-y-3">
+                <h3 class="text-base font-bold text-[#5a2d16] flex items-center"><i class="fa-solid fa-wand-magic-sparkles mr-2 text-[#82aac4]"></i> Thường được mua cùng</h3>
+                <section class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    
+                    <!-- Item 1: Men nở -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative">
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../men nở.webp" alt="Men nở" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Men nở Pháp Mauripan hộp 500g cực nhạy</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">85.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Bột mì số 8 -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative">
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../bột mì số 8.jpg" alt="Bột mì số 8" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Bột mì đa dụng Địa Cầu số 8 làm bánh bông lan</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">26.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Cây phới lồng -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative overflow-hidden">
+                        <span class="absolute top-0 left-0 bg-[#D96B43] text-white text-[9px] font-bold px-2 py-0.5 rounded-br-lg z-10">HOT</span>
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../cây phới lồng.webp" alt="Cây phới lồng" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Cây phới lồng đánh trứng inox đúc dày dặn</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">35.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Cân điện tử -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative">
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../cân điện tử.webp" alt="Cân điện tử" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Cân điện tử nhà bếp mini chính xác 0.1g</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">99.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Giấy nến -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative">
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../giấy nến.jpg" alt="Giấy nến" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Giấy nến nướng bánh chống dính cuộn 5m</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">19.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Phới dẹt -->
+                    <div class="bg-white rounded-xl border border-stone-200/60 p-3 flex flex-col justify-between shadow-sm relative">
+                        <div class="w-full aspect-square bg-stone-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                            <img src="../phới dẹt.jpg" alt="Phới dẹt" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xs font-semibold text-stone-700 line-clamp-2">Phới dẹt Spatula silicone đúc chịu nhiệt</h4>
+                        <div class="flex items-center justify-between mt-2 pt-1 border-t border-stone-50">
+                            <span class="text-xs font-bold text-[#5a2d16]">25.000đ</span>
+                            <button class="w-6 h-6 bg-[#ccb186]/20 hover:bg-[#ccb186] hover:text-white rounded-full flex items-center justify-center text-[#5a2d16] text-xs transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Order Sidebar (Chiếm 1 phần) -->
+        <aside class="lg:col-span-1">
+            <div class="bg-white rounded-2xl border border-stone-200/60 shadow-md p-6 space-y-4 sticky top-24">
+                <h3 class="text-base font-bold text-[#5a2d16] border-b border-stone-100 pb-2">Tóm tắt đơn hàng</h3>
+                
+                <div class="space-y-2 text-sm text-stone-600">
+                    <div class="flex justify-between"><span>Tạm tính</span><span class="font-medium text-stone-800">240.000đ</span></div>
+                    <div class="flex justify-between"><span>Phí vận chuyển</span><span class="font-medium text-stone-800">30.000đ</span></div>
+                    <div class="flex justify-between text-emerald-600"><span>Giảm giá voucher</span><span>-15.000đ</span></div>
+                </div>
+                
+                <hr class="border-stone-100">
+                
+                <div class="flex justify-between items-center py-1">
+                    <span class="text-base font-bold text-stone-800">Tổng cộng</span>
+                    <span class="text-xl font-extrabold text-[#5a2d16]">255.000đ</span>
+                </div>
+                
+                <button class="w-full bg-[#5a2d16] hover:bg-[#3d1e0e] text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm tracking-wider">
+                    ĐẶT HÀNG NGAY
+                </button>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER ĐỒNG BỘ MÀU XANH #82aac4 -->
+    <footer class="bg-[#82aac4] text-white text-sm mt-12 py-10 border-t border-[#6c95b0] w-full">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-4/5 bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-5/6 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-3/4 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-20 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-28 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-2/3 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="flex flex-col space-y-4 items-start md:items-end">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-1"></div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-white bg-[#3B5998] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xl shadow hover:opacity-90"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-white bg-[#5a2d16] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xs font-bold shadow hover:opacity-90">Zalo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>v

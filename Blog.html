@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Công Thức Làm Bánh - Bake It!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFBF7] flex flex-col min-h-screen font-sans antialiased text-stone-800">
+
+    <!-- HEADER ĐỒNG BỘ MÀU NÂU #5a2d16 -->
+    <header class="bg-[#5a2d16] text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-4 w-1/4">
+                <img src="../logo.jpg" alt="Logo" class="h-10 w-40 object-cover rounded bg-stone-200">
+            </div>
+            
+            <div class="flex-1 max-w-xl mx-4">
+                <div class="relative">
+                    <input type="text" placeholder="Tìm kiếm bài viết, công thức..." class="w-full bg-white text-stone-800 pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-sm">
+                    <button class="absolute right-3 top-2.5 text-stone-400 hover:text-[#82aac4] transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-5 justify-end w-1/4">
+                <a href="#" class="relative p-1 hover:text-[#82aac4] transition">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-[#D96B43] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+                </a>
+                <div class="text-sm font-medium text-white bg-[#3d1e0e]/50 px-3 py-1 rounded border border-[#ccb186]/30">
+                    @ratatouille06
+                </div>
+                <img src="../avt.jpg" alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover bg-stone-300 shrink-0">
+            </div>
+        </div>
+        
+        <!-- SUB NAVIGATION -->
+        <div class="bg-[#f2eae1] border-b border-[#ccb186]/30 text-stone-600 text-sm font-medium">
+            <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-16 py-2.5">
+                <a href="#" class="hover:text-[#5a2d16] transition">Trang chủ</a>
+                <a href="#" class="hover:text-[#5a2d16] flex items-center transition">Sản phẩm <i class="fa-solid fa-caret-down ml-1 text-xs"></i></a>
+                <a href="#" class="text-[#5a2d16] font-bold border-b-2 border-[#5a2d16] pb-0.5 flex items-center transition">Blog</a>
+                <a href="#" class="hover:text-[#5a2d16] transition">About us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN LAYOUT CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 space-y-10">
+        
+        <!-- 1. BIG TOP BANNER (ĐÃ THÊM ẢNH BÁNH TRUNG THU) -->
+        <section class="relative w-full h-[320px] md:h-[400px] rounded-2xl overflow-hidden bg-stone-800 shadow-md flex items-end">
+            <img src="../Bí quyết làm bánh trung thu nhân thập cẩm.png" alt="Bí quyết làm bánh trung thu nhân thập cẩm" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
+            
+            <div class="relative z-20 p-6 md:p-10 text-white max-w-2xl space-y-3">
+                <span class="bg-[#D96B43] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Xu hướng mùa này</span>
+                <h1 class="text-xl md:text-3xl font-extrabold leading-tight">Bí quyết làm bánh trung thu nhân thập cẩm truyền thống bất bại, vỏ bánh mềm tan</h1>
+                <p class="text-xs md:text-sm text-stone-300 line-clamp-2">Chia sẻ chi tiết từ cách nấu nước đường chuẩn màu đến mẹo sên nhân không bị tách dầu dành cho người mới bắt đầu làm bánh.</p>
+            </div>
+        </section>
+
+        <!-- HAI CỘT CHÍNH -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            
+            <!-- 2. SIDEBAR LEFT: Bài viết xem nhiều nhất -->
+            <aside class="lg:col-span-1 space-y-4">
+                <div class="bg-white rounded-2xl border border-stone-200/60 p-5 shadow-sm space-y-4">
+                    <h3 class="text-sm font-bold text-[#5a2d16] uppercase tracking-wider border-b border-stone-100 pb-2 flex items-center">
+                        <i class="fa-solid fa-fire mr-2 text-[#D96B43]"></i> Xem nhiều nhất
+                    </h3>
+                    <div class="space-y-3">
+                        <a href="#" class="group block space-y-1">
+                            <h4 class="text-xs font-semibold text-stone-700 group-hover:text-[#5a2d16] line-clamp-2 transition">1. Cách phân biệt bột mì số 8, số 11 và số 13 chuẩn xác</h4>
+                            <span class="text-[10px] text-stone-400">🔥 12,450 lượt xem</span>
+                        </a>
+                        <hr class="border-stone-100">
+                        <a href="#" class="group block space-y-1">
+                            <h4 class="text-xs font-semibold text-stone-700 group-hover:text-[#5a2d16] line-clamp-2 transition">2. Tại sao bánh Chiffon bị xẹp lún sau khi nướng?</h4>
+                            <span class="text-[10px] text-stone-400">🔥 9,812 lượt xem</span>
+                        </a>
+                        <hr class="border-stone-100">
+                        <a href="#" class="group block space-y-1">
+                            <h4 class="text-xs font-semibold text-stone-700 group-hover:text-[#5a2d16] line-clamp-2 transition">3. Mẹo vệ sinh lò nướng sạch bóng dầu mỡ cực nhanh</h4>
+                            <span class="text-[10px] text-stone-400">🔥 8,240 lượt xem</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 3. LIST OF SECTION ROWS (RIGHT COLUMN) -->
+            <div class="lg:col-span-3 space-y-8">
+                
+                <!-- HÀNG 1: CÔNG THỨC MỚI NHẤT -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-[#5a2d16] flex items-center"><span class="w-1.5 h-4 bg-[#ccb186] rounded mr-2"></span> Công thức mới nhất</h3>
+                        <a href="#" class="text-xs font-bold text-[#82aac4] hover:text-[#5a2d16] transition">Xem thêm <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i></a>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- Card 1: Cheesecake xoài -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh cheesecake xoài.jpg" alt="Bánh cheesecake xoài" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh Cheesecake xoài nhiệt đới</h4>
+                                <p class="text-[10px] text-stone-400">⏱ 45 phút</p>
+                            </div>
+                        </div>
+                        <!-- Card 2: Waffle dâu tây -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh waffle dâu tây.jpg" alt="Bánh waffle dâu tây" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh Waffle dâu tây mật ong</h4>
+                                <p class="text-[10px] text-stone-400">⏱ 20 phút</p>
+                            </div>
+                        </div>
+                        <!-- Card 3: Bánh mì hoa cúc -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh mì hoa cúc pháp mềm dai.webp" alt="Bánh mì hoa cúc Pháp" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh mì hoa cúc Pháp mềm dai</h4>
+                                <p class="text-[10px] text-stone-400">⏱ 120 phút</p>
+                            </div>
+                        </div>
+                        <!-- Card 4: Macaron -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../macaron vị trà xanh kem phô mai.jpg" alt="Macaron vị trà xanh" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Macaron vị trà xanh kem phô mai</h4>
+                                <p class="text-[10px] text-stone-400">⏱ 60 phút</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HÀNG 2: CÔNG THỨC HOT NHẤT -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-[#5a2d16] flex items-center"><span class="w-1.5 h-4 bg-[#ccb186] rounded mr-2"></span> Công thức hot nhất</h3>
+                        <a href="#" class="text-xs font-bold text-[#82aac4] hover:text-[#5a2d16] transition">Xem thêm <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i></a>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- Card 1: Red Velvet -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh kem red velvet.jpg" alt="Bánh kem red velvet" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh kem Red Velvet cốt ẩm nhung đỏ</h4>
+                                <p class="text-[10px] text-[#D96B43] font-medium">⭐ 4.9 (1.2k đánh giá)</p>
+                            </div>
+                        </div>
+                        <!-- Card 2: Cookies socola -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../banh-cookie-socola-chip.webp" alt="Cookies socola chip" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Cookies socola chip lười chảy dẻo</h4>
+                                <p class="text-[10px] text-[#D96B43] font-medium">⭐ 4.8 (950 đánh giá)</p>
+                            </div>
+                        </div>
+                        <!-- Card 3: Tiramisu -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh tiramisu.webp" alt="Bánh tiramisu" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh Tiramisu truyền thống không cần lò</h4>
+                                <p class="text-[10px] text-[#D96B43] font-medium">⭐ 5.0 (2k đánh giá)</p>
+                            </div>
+                        </div>
+                        <!-- Card 4: Bánh ngói hạnh nhân -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh ngói hạnh nhân.jpg" alt="Bánh ngói hạnh nhân" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh ngói hạnh nhân giảm cân giòn rụm</h4>
+                                <p class="text-[10px] text-[#D96B43] font-medium">⭐ 4.7 (620 đánh giá)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HÀNG 3: KHÔNG CẦN LÒ NƯỚNG -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base font-bold text-[#5a2d16] flex items-center"><span class="w-1.5 h-4 bg-[#ccb186] rounded mr-2"></span> Công thức làm bánh không cần lò nướng</h3>
+                        <a href="#" class="text-xs font-bold text-[#82aac4] hover:text-[#5a2d16] transition">Xem thêm <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i></a>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- Card 1: Pancake -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh pancake bông xốp bằng chảo chống dính.webp" alt="Bánh pancake" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh Pancake bông xốp bằng chảo chống dính</h4>
+                                <p class="text-[10px] text-emerald-600 bg-emerald-50 max-w-max px-1.5 py-0.5 rounded">Dễ làm</p>
+                            </div>
+                        </div>
+                        <!-- Card 2: Mochi -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh mochi nhật bản kem lạnh dâu tây.jpg" alt="Bánh mochi kem lạnh" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh Mochi Nhật Bản nhân kem lạnh dâu tây</h4>
+                                <p class="text-[10px] text-emerald-600 bg-emerald-50 max-w-max px-1.5 py-0.5 rounded">Dễ làm</p>
+                            </div>
+                        </div>
+                        <!-- Card 3: Bông lan hấp -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../bánh bông lan hấp nồi cơm điện.webp" alt="Bánh bông lan hấp" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Bánh bông lan hấp bằng nồi cơm điện</h4>
+                                <p class="text-[10px] text-emerald-600 bg-emerald-50 max-w-max px-1.5 py-0.5 rounded">Dễ làm</p>
+                            </div>
+                        </div>
+                        <!-- Card 4: Kẹo Nougat -->
+                        <div class="bg-white rounded-xl border border-stone-200/60 overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div class="w-full aspect-square bg-stone-50 overflow-hidden flex items-center justify-center">
+                                <img src="../kẹo nougat.jpg" alt="Kẹo nougat" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-2.5 space-y-1">
+                                <h4 class="text-xs font-bold text-stone-700 line-clamp-2">Kẹo Nougat vị hạt tổng hợp ngọt ngào</h4>
+                                <p class="text-[10px] text-emerald-600 bg-emerald-50 max-w-max px-1.5 py-0.5 rounded">Dễ làm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 4. REELS CÔNG THỨC NGẮN (ĐÃ THÊM ẢNH ĐỘC QUYỀN) -->
+        <section class="space-y-3">
+            <h3 class="text-base font-bold text-[#5a2d16] flex items-center"><i class="fa-solid fa-circle-play mr-2 text-[#82aac4]"></i> Reels Công thức ngắn 60s</h3>
+            <div class="grid grid-cols-3 sm:grid-cols-6 gap-4">
+                <!-- Reel 1 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../mẹo đánh lòng trắng trứng.jpg" alt="Mẹo đánh lòng trắng" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Mẹo đánh lòng trắng</p>
+                </div>
+                <!-- Reel 2 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../ủ bột mì hoa cúc.jpg" alt="Ủ bột mì hoa cúc" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Ủ bột mì hoa cúc</p>
+                </div>
+                <!-- Reel 3 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../cách sên nhân dứa.jpg" alt="Cách sên nhân dứa" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Cách sên nhân dứa</p>
+                </div>
+                <!-- Reel 4 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../tỉ lệ trộn bột vỏ.webp" alt="Tỉ lệ trộn bột vỏ" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Tỉ lệ trộn bột vỏ</p>
+                </div>
+                <!-- Reel 5 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../nướng cookie chuẩn.jpg" alt="Nướng cookies chuẩn" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Nướng cookies chuẩn</p>
+                </div>
+                <!-- Reel 6 -->
+                <div class="text-center space-y-1 cursor-pointer group">
+                    <div class="w-full aspect-[9/16] bg-stone-100 rounded-2xl overflow-hidden relative shadow-sm group-hover:scale-95 transition-all">
+                        <img src="../chống dính khuôn.jpg" alt="Chống dính khuôn" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/10 flex items-center justify-center text-white text-xl"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <p class="text-[11px] font-semibold text-stone-600 line-clamp-1">Chống dính khuôn</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. KHU VỰC VIDEO MASTERCLASS (ĐÃ THÊM ẢNH BÀI HỌC VÀ BÀI TIẾP THEO) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white rounded-2xl border border-stone-200/60 p-6 shadow-sm">
+            <!-- Cột trái: Khung phát Video lớn -->
+            <div class="md:col-span-2 space-y-3">
+                <div class="w-full aspect-video bg-stone-800 rounded-xl relative flex items-center justify-center group cursor-pointer overflow-hidden shadow-md">
+                    <img src="../hướng dẫn làm bánh mì baguette pháp giòn rỗng ruột đúng điệu.jpg" alt="Video gốc làm bánh Baguette" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+                    <span class="w-16 h-16 bg-white/90 text-[#5a2d16] rounded-full flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition z-10"><i class="fa-solid fa-play ml-1"></i></span>
+                </div>
+                <div>
+                    <h3 class="text-base font-bold text-stone-800">Hướng dẫn làm bánh mì Baguette Pháp giòn vỏ rỗng ruột đúng điệu</h3>
+                    <p class="text-xs text-stone-400 mt-0.5">Thời lượng: 15:45 | Giảng viên: Chef Hoàng Nguyễn</p>
+                </div>
+            </div>
+            <!-- Cột phải: Danh sách video liên quan -->
+            <div class="md:col-span-1 flex flex-col justify-between space-y-3">
+                <h4 class="text-xs font-bold text-[#5a2d16] uppercase tracking-wider">Bài học tiếp theo</h4>
+                <div class="space-y-3 flex-1 overflow-y-auto pr-1">
+                    <!-- Row 1 -->
+                    <div class="flex items-center space-x-3 p-2 hover:bg-stone-50 rounded-xl cursor-pointer border border-transparent hover:border-stone-100 transition">
+                        <div class="w-20 h-12 bg-stone-50 rounded-lg overflow-hidden shrink-0 flex items-center justify-center border border-stone-200">
+                            <img src="../kỹ thuật nhồi bột bằng tay kéo màng không mỏi.jpg" alt="Bài 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="min-w-0"><p class="text-xs font-bold text-stone-700 line-clamp-2">Bài 2: Kỹ thuật nhồi bột bằng tay kéo màng không mỏi</p></div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="flex items-center space-x-3 p-2 hover:bg-stone-50 rounded-xl cursor-pointer border border-transparent hover:border-stone-100 transition">
+                        <div class="w-20 h-12 bg-stone-50 rounded-lg overflow-hidden shrink-0 flex items-center justify-center border border-stone-200">
+                            <img src="../cách căn nhiệt độ lò nướng gia đình không bị lệch.jpg" alt="Bài 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="min-w-0"><p class="text-xs font-bold text-stone-700 line-clamp-2">Bài 3: Cách căn nhiệt độ lò nướng gia đình không bị lệch</p></div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="flex items-center space-x-3 p-2 hover:bg-stone-50 rounded-xl cursor-pointer border border-transparent hover:border-stone-100 transition">
+                        <div class="w-20 h-12 bg-stone-50 rounded-lg overflow-hidden shrink-0 flex items-center justify-center border border-stone-200">
+                            <img src="../tạo hình bánh sừng bò croissant ngàn lớp.jpg" alt="Bài 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="min-w-0"><p class="text-xs font-bold text-stone-700 line-clamp-2">Bài 4: Tạo hình bánh sừng bò Croissant ngàn lớp</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. KHU VỰC HỎI ĐÁP Q&A -->
+        <section class="bg-white rounded-2xl border border-stone-200/60 shadow-sm p-6 space-y-4">
+            <h3 class="text-base font-bold text-[#5a2d16] border-b border-stone-100 pb-2 flex items-center">
+                <i class="fa-solid fa-comments mr-2 text-[#82aac4]"></i> Góc hỏi đáp & Chia sẻ mẹo làm bánh
+            </h3>
+            
+            <div class="flex items-start space-x-3 pt-2">
+                <img src="../avt.jpg" class="w-9 h-9 rounded-full object-cover border border-[#ccb186]" alt="User">
+                <div class="flex-1 space-y-2">
+                    <textarea placeholder="Bánh của bạn bị xẹp, cốt bánh bị chai? Hãy để lại câu hỏi tại đây để mọi người cùng bắt bệnh nhé..." rows="2" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-[#82aac4]"></textarea>
+                    <div class="flex justify-between items-center">
+                        <span class="text-[10px] text-stone-400"><i class="fa-solid fa-circle-info mr-1"></i>Vui lòng lịch sự và tôn trọng cộng đồng</span>
+                        <button class="bg-[#5a2d16] hover:bg-[#3d1e0e] text-white text-xs font-semibold px-4 py-1.5 rounded-lg transition shadow-sm">Gửi câu hỏi</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 mt-6 pt-4 border-t border-stone-50">
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3 text-xs">
+                        <div class="w-8 h-8 bg-[#f2eae1] text-[#5a2d16] rounded-full flex items-center justify-center font-bold border border-[#ccb186]/30">M</div>
+                        <div class="flex-1 space-y-1">
+                            <div class="flex items-center space-x-2"><span class="font-bold text-stone-700">Minh Thư</span><span class="text-[10px] text-stone-400">10 phút trước</span></div>
+                            <p class="text-stone-600">Mọi người ơi, em làm bánh mỳ hoa cúc thắt bím xong lúc nướng nó bị bung hết nếp thắt ra nhìn xấu lắm, có ai biết tại sao không ạ? 😭</p>
+                            <div class="flex space-x-4 text-[10px] text-stone-400 pt-1">
+                                <span class="hover:text-[#5a2d16] cursor-pointer"><i class="fa-solid fa-thumbs-up mr-1"></i> Thích (3)</span>
+                                <span class="hover:text-[#5a2d16] cursor-pointer text-[#82aac4] font-bold"><i class="fa-solid fa-reply mr-1"></i> Trả lời câu hỏi này</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-11 flex items-start space-x-3 text-xs">
+                        <img src="../avt.jpg" class="w-7 h-7 rounded-full object-cover border border-[#ccb186]" alt="Admin">
+                        <div class="flex-1 bg-stone-50 rounded-xl p-3 space-y-1">
+                            <div class="flex items-center space-x-2"><span class="font-bold text-[#5a2d16]">Bake It! Admin</span><span class="bg-[#ccb186]/20 text-[#5a2d16] text-[9px] px-1.5 rounded font-medium">Tác giả</span></div>
+                            <p class="text-stone-600">Do em thắt bím chặt tay quá hoặc lúc tạo hình xong em đem đi nướng luôn mà chưa để bánh nở cấu trúc lần 2 đạt chuẩn 80% á. Lần sau em thắt lỏng tay một chút và đợi bánh nở rồi mới quét trứng mang đi nướng nhé!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER ĐỒNG BỘ MÀU XANH #82aac4 -->
+    <footer class="bg-[#82aac4] text-white text-sm mt-12 py-10 border-t border-[#6c95b0] w-full">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-4/5 bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-5/6 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-3/4 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-20 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-28 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-2/3 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="flex flex-col space-y-4 items-start md:items-end">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-1"></div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-white bg-[#3B5998] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xl shadow hover:opacity-90"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-white bg-[#5a2d16] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xs font-bold shadow hover:opacity-90">Zalo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

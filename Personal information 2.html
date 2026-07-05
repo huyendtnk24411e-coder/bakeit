@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân - Phần 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Personal information 2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFBF7] flex flex-col min-h-screen font-sans antialiased text-stone-800">
+
+    <!-- HEADER ĐỒNG BỘ MÀU NÂU #5a2d16 -->
+    <header class="bg-[#5a2d16] text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-4 w-1/4">
+                <img src="../logo.jpg" alt="Logo" class="h-10 w-40 object-cover rounded bg-stone-200">
+            </div>
+            
+            <div class="flex-1 max-w-xl mx-4">
+                <div class="relative">
+                    <input type="text" placeholder="Tìm kiếm..." class="w-full bg-white text-stone-800 pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                    <div class="absolute right-3 top-2.5 text-stone-400 flex space-x-1">
+                        <span class="w-4 h-4 bg-stone-200 rounded-sm"></span>
+                        <span class="w-4 h-4 bg-stone-200 rounded-sm"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-5 justify-end w-1/4">
+                <a href="#" class="relative p-1 hover:text-[#82aac4] transition">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-[#D96B43] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </a>
+                <div class="text-sm font-medium text-white bg-[#3d1e0e]/50 px-3 py-1 rounded border border-[#ccb186]/30">
+                    @ratatouille06
+                </div>
+                <img src="../avt.jpg" alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover bg-stone-300 shrink-0">
+            </div>
+        </div>
+        
+        <!-- SUB NAVIGATION -->
+        <div class="bg-[#f2eae1] border-b border-[#ccb186]/30 text-stone-600 text-sm font-medium">
+            <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-16 py-2.5">
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Trang chủ</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Sản phẩm <i class="fa-solid fa-caret-down ml-1 text-xs"></i></a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Blog</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">About us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BODY CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- SIDEBAR (LEFT) - ĐÃ KÍCH HOẠT ACTIVE CHO TAB LỊCH SỬ HOẠT ĐỘNG -->
+        <aside class="md:col-span-1 space-y-4">
+            <div class="bg-[#5a2d16] rounded-xl p-6 text-center text-white shadow-sm flex flex-col items-center justify-center min-h-[180px]">
+                <img src="../avt.jpg" alt="Avatar" class="w-20 h-20 bg-stone-300 rounded-full object-cover mb-3 shadow-md border-2 border-[#ccb186]">
+                <div class="text-sm font-semibold tracking-wide text-[#ccb186]">@ratatouille06</div>
+            </div>
+            
+            <nav class="bg-white rounded-xl shadow-sm border border-stone-200/60 overflow-hidden">
+                <a href="Personal information 1.html" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-user text-xs"></i></span>
+                        <span>Thông tin cá nhân</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+                <!-- Tab Lịch sử hoạt động đổi sang trạng thái Active màu xanh đặc trưng -->
+                <a href="Personal information 2.html" class="flex items-center justify-between p-4 bg-[#f0f5f8] border-l-4 border-[#82aac4] text-stone-800 font-semibold">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-[#82aac4]/20 rounded-sm flex items-center justify-center text-[#82aac4]"><i class="fa-solid fa-clock-rotate-left text-xs"></i></span>
+                        <span>Lịch sử hoạt động</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-[#82aac4]"></i>
+                </a>
+                <a href="Personal information 3.html" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-shield-halved text-xs"></i></span>
+                        <span>Cài đặt bảo mật</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-ellipsis text-xs"></i></span>
+                        <span>Tiện ích khác</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT (RIGHT) - NỘI DUNG ĐƠN HÀNG THỰC TẾ -->
+        <section class="md:col-span-3 space-y-4">
+            
+            <!-- Bộ lọc tìm kiếm lịch sử -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <h2 class="text-xl font-bold text-[#5a2d16] flex items-center"><i class="fa-solid fa-bag-shopping mr-2 text-sm text-[#82aac4]"></i> Đơn hàng của tôi</h2>
+                    <p class="text-xs text-stone-400 mt-0.5">Theo dõi chi tiết các đơn hàng mua sắm dụng cụ làm bánh.</p>
+                </div>
+                <div class="relative w-full sm:w-64">
+                    <input type="text" placeholder="Tìm theo Tên shop hoặc ID đơn..." class="w-full bg-white border border-stone-200 rounded-full pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#82aac4] text-xs">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-stone-400 text-xs"></i>
+                </div>
+            </div>
+
+            <!-- Các Tab trạng thái đơn hàng (Đồng bộ theo màu xanh chủ đạo) -->
+            <div id="tab-container" class="bg-white rounded-xl border border-stone-200/60 p-1 shadow-sm flex space-x-1 text-xs overflow-x-auto whitespace-nowrap scrollbar-none">
+                <span data-status="all" class="tab-item px-4 py-2 bg-[#f0f5f8] text-[#82aac4] font-semibold rounded-lg cursor-pointer">Tất cả đơn</span>
+                <span data-status="pending" class="tab-item px-4 py-2 text-stone-500 hover:bg-stone-50 rounded-lg cursor-pointer">Chờ thanh toán</span>
+                <span data-status="shipping_status" class="tab-item px-4 py-2 text-stone-500 hover:bg-stone-50 rounded-lg cursor-pointer">Vận chuyển</span>
+                <span data-status="shipping" class="tab-item px-4 py-2 text-stone-500 hover:bg-stone-50 rounded-lg cursor-pointer">Đang giao</span>
+                <span data-status="completed" class="tab-item px-4 py-2 text-stone-500 hover:bg-stone-50 rounded-lg cursor-pointer">Đã giao</span>
+                <span data-status="cancelled" class="tab-item px-4 py-2 text-stone-500 hover:bg-stone-50 rounded-lg cursor-pointer">Đã hủy</span>
+            </div>
+
+            <!-- Danh sách các đơn hàng -->
+            <div id="order-container" class="space-y-4">
+                
+                <!-- Thông báo khi không có đơn hàng -->
+                <div id="no-orders" class="hidden bg-white rounded-2xl border border-stone-200/60 shadow-sm p-8 text-center text-stone-400 text-sm">
+                    <i class="fa-solid fa-box-open text-3xl mb-2 text-stone-300 block"></i>
+                    Không có đơn hàng nào trong mục này.
+                </div>
+
+                <!-- Đơn hàng 1 (Đang giao) -->
+                <div data-status="shipping" class="order-card bg-white rounded-2xl border border-stone-200/60 shadow-sm p-5 space-y-4">
+                    <!-- Trạng thái đơn -->
+                    <div class="flex justify-between items-center border-b border-stone-100 pb-3 text-xs">
+                        <div class="flex items-center space-x-2">
+                            <span class="font-bold text-stone-700">Mã đơn: #BKE10924</span>
+                            <span class="text-stone-300">|</span>
+                            <span class="text-stone-400">05/07/2026</span>
+                        </div>
+                        <div class="text-amber-600 font-semibold flex items-center">
+                            <i class="fa-solid fa-truck-fast mr-1.5 animate-pulse"></i> Đang giao hàng
+                        </div>
+                    </div>
+
+                    <!-- Thông tin chi tiết sản phẩm -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <!-- Ảnh dụng cụ bánh giả lập -->
+                            <div class="w-16 h-16 bg-[#f2eae1] rounded-xl flex-shrink-0 flex items-center justify-center text-[#5a2d16]">
+                                <i class="fa-solid fa-blender text-2xl"></i>
+                            </div>
+                            <div class="space-y-1 flex-1">
+                                <h3 class="text-sm font-semibold text-stone-800 line-clamp-1">Máy đánh trứng cầm tay 7 tốc độ cao cấp</h3>
+                                <p class="text-xs text-stone-400">Phân loại: Màu Trắng Kem</p>
+                                <p class="text-xs text-stone-700 font-medium">x1</p>
+                            </div>
+                        </div>
+                        <div class="text-right whitespace-nowrap">
+                            <span class="text-xs text-stone-400 line-through">350.000đ</span>
+                            <div class="text-sm font-bold text-[#5a2d16]">289.000đ</div>
+                        </div>
+                    </div>
+
+                    <!-- Tổng thanh toán & Action nút bấm -->
+                    <div class="flex justify-between items-center pt-3 border-t border-stone-50 text-xs">
+                        <div class="text-stone-500">Tổng số tiền (1 sản phẩm): <span class="text-sm font-bold text-[#5a2d16]">289.000đ</span></div>
+                        <button class="bg-[#82aac4] hover:bg-[#6c95b0] text-white px-4 py-2 rounded-xl font-medium transition shadow-sm">
+                            Theo dõi đơn
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Đơn hàng 2 (Đã giao / Hoàn thành) -->
+                <div data-status="completed" class="order-card bg-white rounded-2xl border border-stone-200/60 shadow-sm p-5 space-y-4">
+                    <div class="flex justify-between items-center border-b border-stone-100 pb-3 text-xs">
+                        <div class="flex items-center space-x-2">
+                            <span class="font-bold text-stone-700">Mã đơn: #BKE10851</span>
+                            <span class="text-stone-300">|</span>
+                            <span class="text-stone-400">28/06/2026</span>
+                        </div>
+                        <div class="text-emerald-600 font-semibold flex items-center">
+                            <i class="fa-solid fa-circle-check mr-1.5"></i> Hoàn thành
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <div class="w-16 h-16 bg-[#f2eae1] rounded-xl flex-shrink-0 flex items-center justify-center text-[#5a2d16]">
+                                <i class="fa-solid fa-cookie text-2xl"></i>
+                            </div>
+                            <div class="space-y-1 flex-1">
+                                <h3 class="text-sm font-semibold text-stone-800 line-clamp-1">Combo 5 khuôn làm bánh Tart trứng / Chiffon chống dính</h3>
+                                <p class="text-xs text-stone-400">Phân loại: Size 10cm</p>
+                                <p class="text-xs text-stone-700 font-medium">x2</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-bold text-[#5a2d16]">120.000đ</div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-3 border-t border-stone-50 text-xs">
+                        <div class="text-stone-500">Tổng số tiền (2 sản phẩm): <span class="text-sm font-bold text-[#5a2d16]">240.000đ</span></div>
+                        <div class="space-x-2">
+                            <button class="bg-[#F4EFE6] hover:bg-[#ccb186]/30 text-[#5a2d16] px-4 py-2 rounded-xl font-semibold border border-[#ccb186]/20 transition">
+                                Đánh giá
+                            </button>
+                            <button class="bg-[#5a2d16] hover:bg-[#3d1e0e] text-white px-4 py-2 rounded-xl font-medium transition shadow-sm">
+                                Mua lại
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER ĐỒNG BỘ MÀU XANH #82aac4 -->
+    <footer class="bg-[#82aac4] text-white text-sm mt-12 py-10 border-t border-[#6c95b0] w-full">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-4/5 bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-5/6 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-3/4 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-20 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-28 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-2/3 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="flex flex-col space-y-4 items-start md:items-end">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-1"></div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-white bg-[#3B5998] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xl shadow hover:opacity-90"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-white bg-[#5a2d16] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xs font-bold shadow hover:opacity-90">Zalo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT XỬ LÝ LỌC ĐƠN HÀNG VÀ HIỂN THỊ THÔNG BÁO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-item');
+            const cards = document.querySelectorAll('.order-card');
+            const noOrdersMsg = document.getElementById('no-orders');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Cập nhật giao diện active cho Tab
+                    tabs.forEach(t => {
+                        t.classList.remove('bg-[#f0f5f8]', 'text-[#82aac4]', 'font-semibold');
+                        t.classList.add('text-stone-500', 'hover:bg-stone-50');
+                    });
+                    this.classList.add('bg-[#f0f5f8]', 'text-[#82aac4]', 'font-semibold');
+                    this.classList.remove('text-stone-500', 'hover:bg-stone-50');
+
+                    // Lọc đơn hàng
+                    const targetStatus = this.getAttribute('data-status');
+                    let visibleCardsCount = 0;
+
+                    cards.forEach(card => {
+                        const cardStatus = card.getAttribute('data-status');
+                        if (targetStatus === 'all' || cardStatus === targetStatus) {
+                            card.classList.remove('hidden');
+                            visibleCardsCount++;
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+
+                    // Hiển thị thông báo nếu không có đơn hàng phù hợp
+                    if (visibleCardsCount === 0) {
+                        noOrdersMsg.classList.remove('hidden');
+                    } else {
+                        noOrdersMsg.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

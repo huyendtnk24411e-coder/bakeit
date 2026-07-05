@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân - Phần 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Personal information 3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FDFBF7] flex flex-col min-h-screen font-sans antialiased text-stone-800">
+
+    <!-- HEADER ĐỒNG BỘ MÀU NÂU #5a2d16 -->
+    <header class="bg-[#5a2d16] text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-4 w-1/4">
+                <img src="../logo.jpg" alt="Logo" class="h-10 w-40 object-cover rounded bg-stone-200">
+            </div>
+            
+            <div class="flex-1 max-w-xl mx-4">
+                <div class="relative">
+                    <input type="text" placeholder="Tìm kiếm..." class="w-full bg-white text-stone-800 pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-[#82aac4]">
+                    <div class="absolute right-3 top-2.5 text-stone-400 flex space-x-1">
+                        <span class="w-4 h-4 bg-stone-200 rounded-sm"></span>
+                        <span class="w-4 h-4 bg-stone-200 rounded-sm"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-5 justify-end w-1/4">
+                <a href="#" class="relative p-1 hover:text-[#82aac4] transition">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-[#D96B43] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </a>
+                <div class="text-sm font-medium text-white bg-[#3d1e0e]/50 px-3 py-1 rounded border border-[#ccb186]/30">
+                    @ratatouille06
+                </div>
+                <img src="../avt.jpg" alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover bg-stone-300 shrink-0">
+            </div>
+        </div>
+        
+        <!-- SUB NAVIGATION -->
+        <div class="bg-[#f2eae1] border-b border-[#ccb186]/30 text-stone-600 text-sm font-medium">
+            <div class="max-w-7xl mx-auto px-4 flex justify-center space-x-16 py-2.5">
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Trang chủ</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Sản phẩm <i class="fa-solid fa-caret-down ml-1 text-xs"></i></a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">Blog</a>
+                <a href="#" class="hover:text-[#5a2d16] hover:font-semibold flex items-center transition">About us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BODY CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- SIDEBAR (LEFT) -->
+        <aside class="md:col-span-1 space-y-4">
+            <div class="bg-[#5a2d16] rounded-xl p-6 text-center text-white shadow-sm flex flex-col items-center justify-center min-h-[180px]">
+                <img src="../avt.jpg" alt="Avatar" class="w-20 h-20 bg-stone-300 rounded-full object-cover mb-3 shadow-md border-2 border-[#ccb186]">
+                <div class="text-sm font-semibold tracking-wide text-[#ccb186]">@ratatouille06</div>
+            </div>
+            
+            <nav class="bg-white rounded-xl shadow-sm border border-stone-200/60 overflow-hidden">
+                <a href="Personal information 1.html" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-user text-xs"></i></span>
+                        <span>Thông tin cá nhân</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+                <a href="Personal information 2.html" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-clock-rotate-left text-xs"></i></span>
+                        <span>Lịch sử hoạt động</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+                <a href="Personal information 3.html" class="flex items-center justify-between p-4 bg-[#f0f5f8] border-l-4 border-[#82aac4] text-stone-800 font-semibold">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-[#82aac4]/20 rounded-sm flex items-center justify-center text-[#82aac4]"><i class="fa-solid fa-shield-halved text-xs"></i></span>
+                        <span>Cài đặt bảo mật</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-[#82aac4]"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 text-stone-600 hover:bg-[#FDFBF7] transition">
+                    <div class="flex items-center space-x-3">
+                        <span class="w-5 h-5 bg-stone-100 rounded-sm flex items-center justify-center text-stone-400"><i class="fa-solid fa-ellipsis text-xs"></i></span>
+                        <span>Tiện ích khác</span>
+                    </div>
+                    <i class="fa-solid fa-caret-right text-stone-300"></i>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT (RIGHT) - NƠI BỔ SUNG NỘI DUNG BẢO MẬT THỰC TẾ -->
+        <section class="md:col-span-3 space-y-6">
+            <div>
+                <h2 class="text-xl font-bold text-[#5a2d16] flex items-center"><i class="fa-solid fa-lock-open mr-2 text-sm text-[#82aac4]"></i> Thiết lập bảo mật tài khoản</h2>
+                <p class="text-xs text-stone-400 mt-1">Quản lý và bảo vệ thông tin mua sắm dụng cụ làm bánh của bạn.</p>
+            </div>
+
+            <!-- Khối danh sách cài đặt -->
+            <div class="bg-white rounded-2xl border border-stone-200/60 shadow-sm divide-y divide-stone-100">
+                
+                <!-- Mục 1: Đổi mật khẩu -->
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <div class="font-semibold text-stone-800 flex items-center"><i class="fa-solid fa-key text-xs mr-2 text-[#ccb186]"></i> Mật khẩu đăng nhập</div>
+                        <div class="text-sm text-stone-500">Nên cập nhật mật khẩu định kỳ để đảm bảo an toàn cho ví và đơn hàng.</div>
+                    </div>
+                    <button class="bg-[#F4EFE6] hover:bg-[#ccb186]/30 text-[#5a2d16] text-xs font-semibold px-4 py-2 rounded-xl transition border border-[#ccb186]/20 whitespace-nowrap shrink-0">
+                        Đổi mật khẩu
+                    </button>
+                </div>
+                
+                <!-- Mục 2: Xác thực 2 lớp -->
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <div class="font-semibold text-stone-800 flex items-center">
+                            <i class="fa-solid fa-shield-circle-check text-xs mr-2 text-[#ccb186]"></i> Xác thực 2 yếu tố (2FA)
+                            <span class="ml-2 bg-emerald-100 text-emerald-700 text-[10px] px-2 py-0.5 rounded-full font-medium">Đang bật</span>
+                        </div>
+                        <div class="text-sm text-stone-500">Mã OTP bảo mật sẽ gửi về SĐT <span class="font-medium text-stone-700">037846***44</span> khi phát hiện đăng nhập lạ.</div>
+                    </div>
+                    <button class="bg-stone-100 hover:bg-stone-200 text-stone-600 text-xs font-semibold px-4 py-2 rounded-xl transition whitespace-nowrap shrink-0">
+                        Tắt xác thực
+                    </button>
+                </div>
+
+                <!-- Mục 3: Thiết bị đăng nhập -->
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <div class="font-semibold text-stone-800 flex items-center"><i class="fa-solid fa-display text-xs mr-2 text-[#ccb186]"></i> Quản lý thiết bị</div>
+                        <div class="text-sm text-stone-500">Kiểm tra các trình duyệt và thiết bị đang đăng nhập tài khoản BakeIt của bạn.</div>
+                    </div>
+                    <button class="bg-[#F4EFE6] hover:bg-[#ccb186]/30 text-[#5a2d16] text-xs font-semibold px-4 py-2 rounded-xl transition border border-[#ccb186]/20 whitespace-nowrap shrink-0">
+                        Xem danh sách
+                    </button>
+                </div>
+
+                <!-- Mục 4: Yêu cầu xóa tài khoản -->
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-red-50/20">
+                    <div class="space-y-1">
+                        <div class="font-semibold text-red-800 flex items-center"><i class="fa-solid fa-user-slash text-xs mr-2 text-red-400"></i> Yêu cầu hủy tài khoản</div>
+                        <div class="text-sm text-stone-400">Một khi đã xóa, toàn bộ lịch sử mua dụng cụ và điểm tích lũy của bạn sẽ mất vĩnh viễn.</div>
+                    </div>
+                    <button class="text-red-600 hover:text-red-700 hover:bg-red-50 text-xs font-semibold px-4 py-2 rounded-xl transition whitespace-nowrap shrink-0">
+                        Yêu cầu xóa
+                    </button>
+                </div>
+
+            </div>
+        </section> 
+    </main>
+
+    <!-- FOOTER ĐỒNG BỘ MÀU XANH #82aac4 -->
+    <footer class="bg-[#82aac4] text-white text-sm mt-12 py-10 border-t border-[#6c95b0] w-full">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-4/5 bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-5/6 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-3/4 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-20 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="space-y-2">
+                <div class="h-4 w-28 bg-[#6c95b0] rounded mb-3"></div>
+                <div class="h-3 w-full bg-[#759ebb] rounded"></div>
+                <div class="h-3 w-2/3 bg-[#759ebb] rounded"></div>
+            </div>
+            <div class="flex flex-col space-y-4 items-start md:items-end">
+                <div class="h-4 w-24 bg-[#6c95b0] rounded mb-1"></div>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-white bg-[#3B5998] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xl shadow hover:opacity-90"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-white bg-[#5a2d16] rounded-full p-2 w-10 h-10 flex items-center justify-center text-xs font-bold shadow hover:opacity-90">Zalo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
