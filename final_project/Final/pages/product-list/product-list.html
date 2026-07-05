@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm - Bake it!</title>
+    <link rel="stylesheet" href="/pages/product-list/product-list.css">
+    <link rel="stylesheet" href="/shared/component-header.css">
+    <link rel="stylesheet" href="/shared/component-footer.css">
+</head>
+<body>
+
+    <div id="shared-header"></div>
+
+    <div class="container">
+        <div id="tags-container" class="tags-container"></div>
+        <div class="shop-layout">
+            <aside class="filter-sidebar">
+                <div class="filter-group">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="category-tree">
+                        <li class="active" data-category="all" data-subcategory="all">Tất cả sản phẩm</li>
+                        
+                        <!-- Nhóm SET NGUYÊN LIỆU -->
+                        <li data-category="Set nguyên liệu" data-subcategory="all">
+                            <span class="cat-label">Set nguyên liệu tiện lợi</span>
+                            <ul>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh lạnh">Set làm bánh lạnh</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh quy">Set làm bánh quy</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh mì">Set làm bánh mì</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set bánh dùng lò nướng">Set bánh dùng lò nướng</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh truyền thống">Set làm bánh truyền thống</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set chè, trà sữa">Set chè, trà sữa</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set trang trí bánh kem">Set trang trí bánh kem</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set socola/Pepero">Set socola/Pepero</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh Tết">Set làm bánh Tết</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh Valentine">Set làm bánh Valentine</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh Women's day">Set làm bánh Women's day</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh Trung Thu">Set làm bánh Trung Thu</li>
+                                <li data-parent="Set nguyên liệu" data-subcategory="Set làm bánh Noel">Set làm bánh Noel</li>
+                            </ul>
+                        </li>
+
+                        <!-- Nhóm ĐỒ LÀM BÁNH -->
+                        <li data-category="Đồ làm bánh" data-subcategory="all">
+                            <span class="cat-label">Đồ làm bánh</span>
+                            <ul>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Bột làm bánh">Bột làm bánh</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Phụ gia làm bánh">Phụ gia làm bánh</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Nguyên liệu socola">Nguyên liệu socola</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Nguyên liệu trang trí">Nguyên liệu trang trí</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Nguyên liệu tạo màu">Nguyên liệu tạo màu</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Kem tươi">Kem tươi</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Bơ">Bơ</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Phô mai">Phô mai</li>
+                                <li data-parent="Đồ làm bánh" data-subcategory="Bánh đông lạnh">Bánh đông lạnh</li>
+                            </ul>
+                        </li>
+
+                        <!-- Nhóm DỤNG CỤ LÀM BÁNH -->
+                        <li data-category="Dụng cụ làm bánh" data-subcategory="all">
+                            <span class="cat-label">Dụng cụ làm bánh</span>
+                            <ul>
+                                <li data-parent="Dụng cụ làm bánh" data-subcategory="Dụng cụ cơ bản">Dụng cụ cơ bản</li>
+                                <li data-parent="Dụng cụ làm bánh" data-subcategory="Khuôn khay làm bánh">Khuôn khay làm bánh</li>
+                                <li data-parent="Dụng cụ làm bánh" data-subcategory="Túi hộp đựng bánh">Túi hộp đựng bánh</li>
+                                <li data-parent="Dụng cụ làm bánh" data-subcategory="Máy móc làm bánh">Máy móc làm bánh</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h3>Khoảng giá</h3>
+                    <label class="checkbox-label"><input type="checkbox" data-min="0" data-max="50000"> Dưới 50.000đ</label>
+                    <label class="checkbox-label"><input type="checkbox" data-min="50000" data-max="100000"> 50.000đ - 100.000đ</label>
+                    <label class="checkbox-label"><input type="checkbox" data-min="100000" data-max="200000"> 100.000đ - 200.000đ</label>
+                    <label class="checkbox-label"><input type="checkbox" data-min="200000" data-max="999999999"> Trên 200.000đ</label>
+                </div>
+                <div class="filter-group">
+                    <button id="btn-clear-filters" class="btn-continue-shopping" style="width:100%; margin-top:5px;">Xóa bộ lọc</button>
+                </div>
+            </aside>
+
+            <main class="products-main">
+                <div class="sort-bar">
+                    <span class="results-count">Hiển thị các sản phẩm hàng đầu</span>
+                    <div class="sort-select-wrapper">
+                        <span>Sắp xếp:</span>
+                        <select>
+                            <option value="Phổ biến">Phổ biến</option>
+                            <option value="Mới nhất">Mới nhất</option>
+                            <option value="Giá tăng dần">Giá tăng dần</option>
+                            <option value="Giá giảm dần">Giá giảm dần</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="shop-main-grid" class="shop-main-grid"></div>
+
+                <div class="pagination-wrapper" style="display:flex; justify-content:center; gap:8px; margin-top:25px;"></div>
+            </main>
+        </div>
+
+        <section class="promo-banner">
+            <h2>KHÔNG GIAN ƯU ĐÃI & SỰ KIỆN MỚI</h2>
+            <p>[ Banner quảng cáo trung tâm CINNA MOD ]</p>
+        </section>
+
+        <h2 class="section-title">🔥 Sản phẩm đang khuyến mãi</h2>
+        <div id="promo-mini-grid" class="promo-mini-grid"></div>
+
+        <section class="request-product-section">
+            <div class="request-card">
+                <h2>Yêu cầu bán thêm sản phẩm</h2>
+                <div class="request-divider"></div>
+
+                <form id="product-request-form">
+                    <div class="form-group">
+                        <label for="req-product-name">Tên sản phẩm bạn quan tâm:</label>
+                        <input type="text" id="req-product-name" required placeholder="Nhập tên sản phẩm bạn muốn Bake it bán thêm...">
+                    </div>
+                    <div class="form-group">
+                        <label for="req-email">Địa chỉ Email của bạn:</label>
+                        <input type="email" id="req-email" required placeholder="Nhập email để nhận thông báo khi có hàng...">
+                    </div>
+                    <div class="form-group">
+                        <label for="req-note">Yêu cầu chi tiết (Kích thước, thương hiệu, đặc tính...):</label>
+                        <textarea id="req-note" rows="3" placeholder="Mô tả chi tiết, đặc điểm..."></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="req-agree" required>
+                        <label for="req-agree">Tôi đồng ý với chính sách bảo mật của Bake it !</label>
+                    </div>
+                    <button type="submit" class="form-submit-btn">GỬI YÊU CẦU</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div id="shared-footer"></div>
+
+    <script src="/data/products.json"></script>
+    <script src="../../shared/cart-storage.js"></script>
+    <script src="../../shared/global-layout.js"></script>
+    <script src="/pages/product-list/product-list.js"></script>

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "Máy đánh trứng cầm tay",
+    "category": "Dụng cụ làm bánh",
+    "price": 350000,
+    "img_path": "assets/images/products/Dung_cu/maydanhtrung.png",
+    "subcategory": "Thiết bị điện"
+  },
+  {
+    "id": 2,
+    "title": "Phới dẹt Spatula silicone",
+    "category": "Dụng cụ làm bánh",
+    "price": 25000,
+    "img_path": "assets/images/products/Dung_cu/spatula.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 3,
+    "title": "Tấm nướng chống dính Silicon",
+    "category": "Dụng cụ làm bánh",
+    "price": 45000,
+    "img_path": "assets/images/products/Dung_cu/tamnuongsilicon.png",
+    "subcategory": "Khay nướng & Tấm lót"
+  },
+  {
+    "id": 4,
+    "title": "Tô trộn bột inox",
+    "category": "Dụng cụ làm bánh",
+    "price": 60000,
+    "img_path": "assets/images/products/Dung_cu/totronbot.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 5,
+    "title": "Bơ lạt tự nhiên Anchor 250g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 75000,
+    "img_path": "assets/images/products/Nguyen_lieu/bơ/BơAnchor.png",
+    "subcategory": "Bơ"
+  },
+  {
+    "id": 6,
+    "title": "Bột mì Bakers Choice số 8 1kg",
+    "category": "Nguyên liệu làm bánh",
+    "price": 28000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BC8.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 7,
+    "title": "Bột mì Bakers Choice số 11 1kg",
+    "category": "Nguyên liệu làm bánh",
+    "price": 30000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BC11.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 8,
+    "title": "Bột bắp (Bột ngô) Tài Ký 150g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 15000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotBap.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 9,
+    "title": "Bột gạo tẻ Tài Ký 400g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 18000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotGao.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 10,
+    "title": "Bột Matcha trà xanh nguyên chất",
+    "category": "Nguyên liệu làm bánh",
+    "price": 45000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotMatcha.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 11,
+    "title": "Bột năng Tài Ký 400g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 14000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotNang.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 12,
+    "title": "Cream Cheese Anchor 250g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 68000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/CreamCheese.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 13,
+    "title": "Sour Cream Tatura 250g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 52000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/SourCreamTatura.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 14,
+    "title": "Whipping Cream Anchor 250ml",
+    "category": "Nguyên liệu làm bánh",
+    "price": 65000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/WhippingCream.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 15,
+    "title": "Đường bột Biên Hòa 500g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 22000,
+    "img_path": "assets/images/products/Nguyen_lieu/duong/DuongBot.png",
+    "subcategory": "Đường"
+  },
+  {
+    "id": 16,
+    "title": "Đường cát trắng tinh luyện 1kg",
+    "category": "Nguyên liệu làm bánh",
+    "price": 26000,
+    "img_path": "assets/images/products/Nguyen_lieu/duong/DuongCat.png",
+    "subcategory": "Đường"
+  },
+  {
+    "id": 17,
+    "title": "Sữa tươi không đường Vinamilk 1L",
+    "category": "Nguyên liệu làm bánh",
+    "price": 38000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/SuaTuoi.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 18,
+    "title": "Sữa đặc Ông Thọ lon 380g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 24000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/SuaDac.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 19,
+    "title": "Hương vani Rayner's 28ml",
+    "category": "Nguyên liệu làm bánh",
+    "price": 45000,
+    "img_path": "assets/images/products/Nguyen_lieu/huong_lieu/Vani.png",
+    "subcategory": "Hương liệu"
+  },
+  {
+    "id": 20,
+    "title": "Bột nở Baking Powder Alsa 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 18000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotNo.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 21,
+    "title": "Muối nở Baking Soda Arm & Hammer 454g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 35000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BakingSoda.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 22,
+    "title": "Chocolate chip đen Grand Place 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 25000,
+    "img_path": "assets/images/products/Nguyen_lieu/chocolate/ChocoChip.png",
+    "subcategory": "Chocolate"
+  },
+  {
+    "id": 23,
+    "title": "Chocolate thanh đen nguyên chất 55%",
+    "category": "Nguyên liệu làm bánh",
+    "price": 55000,
+    "img_path": "assets/images/products/Nguyen_lieu/chocolate/ChocoThanh.png",
+    "subcategory": "Chocolate"
+  },
+  {
+    "id": 24,
+    "title": "Màu thực phẩm đỏ AmeriColor",
+    "category": "Nguyên liệu làm bánh",
+    "price": 58000,
+    "img_path": "assets/images/products/Nguyen_lieu/mau_thuc_pham/MauDo.png",
+    "subcategory": "Màu thực phẩm"
+  },
+  {
+    "id": 25,
+    "title": "Màu thực phẩm xanh lá AmeriColor",
+    "category": "Nguyên liệu làm bánh",
+    "price": 58000,
+    "img_path": "assets/images/products/Nguyen_lieu/mau_thuc_pham/MauXanhLa.png",
+    "subcategory": "Màu thực phẩm"
+  },
+  {
+    "id": 26,
+    "title": "Hạnh nhân lát sấy khô 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 42000,
+    "img_path": "assets/images/products/Nguyen_lieu/hat/HanhNhanLat.png",
+    "subcategory": "Hạt khô"
+  },
+  {
+    "id": 27,
+    "title": "Hạt dẻ cười tách vỏ sấy mộc 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 65000,
+    "img_path": "assets/images/products/Nguyen_lieu/hat/HatDeCuoi.png",
+    "subcategory": "Hạt khô"
+  },
+  {
+    "id": 28,
+    "title": "Nho khô vàng hữu cơ 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 28000,
+    "img_path": "assets/images/products/Nguyen_lieu/hat/NhoKho.png",
+    "subcategory": "Hạt khô"
+  },
+  {
+    "id": 29,
+    "title": "Gelatin lá Đức 50g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 38000,
+    "img_path": "assets/images/products/Nguyen_lieu/phu_gia/GelatinLa.png",
+    "subcategory": "Phụ gia"
+  },
+  {
+    "id": 30,
+    "title": "Gelatin bột Pháp 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 45000,
+    "img_path": "assets/images/products/Nguyen_lieu/phu_gia/GelatinBot.png",
+    "subcategory": "Phụ gia"
+  },
+  {
+    "id": 31,
+    "title": "Kem tươi Whipping Cream Tatua 1L",
+    "category": "Nguyên liệu làm bánh",
+    "price": 145000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/WhippingCreamTatua.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 32,
+    "title": "Phô mai Mozzarella bào sợi 200g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 55000,
+    "img_path": "assets/images/products/Nguyen_lieu/Kem/Mozzarella.png",
+    "subcategory": "Kem"
+  },
+  {
+    "id": 33,
+    "title": "Men khô nhạt Mauripan 500g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 82000,
+    "img_path": "assets/images/products/Nguyen_lieu/phu_gia/MenKhoNhat.png",
+    "subcategory": "Phụ gia"
+  },
+  {
+    "id": 34,
+    "title": "Bột Cacao nguyên chất Hershey 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 38000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotCacao.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 35,
+    "title": "Bột sư tử Lion Custard 100g",
+    "category": "Nguyên liệu làm bánh",
+    "price": 20000,
+    "img_path": "assets/images/products/Nguyen_lieu/bột/BotSuTu.png",
+    "subcategory": "Bột"
+  },
+  {
+    "id": 36,
+    "title": "Khuôn cupcake muffin 12 ô chống dính",
+    "category": "Dụng cụ làm bánh",
+    "price": 95000,
+    "img_path": "assets/images/products/Dung_cu/KhuonCupcake.png",
+    "subcategory": "Khay nướng & Tấm lót"
+  },
+  {
+    "id": 37,
+    "title": "Khuôn bánh mì gối nắp đậy",
+    "category": "Dụng cụ làm bánh",
+    "price": 85000,
+    "img_path": "assets/images/products/Dung_cu/KhuonBanhMiGoi.png",
+    "subcategory": "Khay nướng & Tấm lót"
+  },
+  {
+    "id": 38,
+    "title": "Cây cán bột gỗ sồi 30cm",
+    "category": "Dụng cụ làm bánh",
+    "price": 32000,
+    "img_path": "assets/images/products/Dung_cu/CayCanBot.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 39,
+    "title": "Dao cắt bánh mì răng cưa cán gỗ",
+    "category": "Dụng cụ làm bánh",
+    "price": 48000,
+    "img_path": "assets/images/products/Dung_cu/DaoRangCua.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 40,
+    "title": "Túi bắt kem nilon dùng một lần 100 cái",
+    "category": "Dụng cụ làm bánh",
+    "price": 25000,
+    "img_path": "assets/images/products/Dung_cu/TuiBatKem.png",
+    "subcategory": "Dụng cụ trang trí"
+  },
+  {
+    "id": 41,
+    "title": "Đui bắt kem inox tạo hình hoa 2D",
+    "category": "Dụng cụ làm bánh",
+    "price": 12000,
+    "img_path": "assets/images/products/Dung_cu/DuiBatKem.png",
+    "subcategory": "Dụng cụ trang trí"
+  },
+  {
+    "id": 42,
+    "title": "Cân điện tử tiểu ly định lượng làm bánh",
+    "category": "Dụng cụ làm bánh",
+    "price": 120000,
+    "img_path": "assets/images/products/Dung_cu/CanDienTu.png",
+    "subcategory": "Thiết bị điện"
+  },
+  {
+    "id": 43,
+    "title": "Nhiệt kế lò nướng inox chịu nhiệt",
+    "category": "Dụng cụ làm bánh",
+    "price": 65000,
+    "img_path": "assets/images/products/Dung_cu/NhietKeLo.png",
+    "subcategory": "Thiết bị điện"
+  },
+  {
+    "id": 44,
+    "title": "Giấy nến nướng bánh cuộn 5m",
+    "category": "Dụng cụ làm bánh",
+    "price": 18000,
+    "img_path": "assets/images/products/Dung_cu/GiayNen.png",
+    "subcategory": "Khay nướng & Tấm lót"
+  },
+  {
+    "id": 45,
+    "title": "Cup giấy mềm lót cupcake bánh 100 cái",
+    "category": "Dụng cụ làm bánh",
+    "price": 15000,
+    "img_path": "assets/images/products/Dung_cu/CupGiay.png",
+    "subcategory": "Dụng cụ trang trí"
+  },
+  {
+    "id": 46,
+    "title": "Chổi quét bơ dầu silicone chịu nhiệt",
+    "category": "Dụng cụ làm bánh",
+    "price": 15000,
+    "img_path": "assets/images/products/Dung_cu/ChoiQuet.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 47,
+    "title": "Khuôn mousse tròn đế rời inox 18cm",
+    "category": "Dụng cụ làm bánh",
+    "price": 55000,
+    "img_path": "assets/images/products/Dung_cu/KhuonMousse.png",
+    "subcategory": "Khay nướng & Tấm lót"
+  },
+  {
+    "id": 48,
+    "title": "Rây lọc bột inox cán dài 15cm",
+    "category": "Dụng cụ làm bánh",
+    "price": 25000,
+    "img_path": "assets/images/products/Dung_cu/RayBot.png",
+    "subcategory": "Dụng cụ cơ bản"
+  },
+  {
+    "id": 49,
+    "title": "Đồng hồ bấm giờ làm bánh mini",
+    "category": "Dụng cụ làm bánh",
+    "price": 35000,
+    "img_path": "assets/images/products/Dung_cu/DongHoBamGio.png",
+    "subcategory": "Thiết bị điện"
+  },
+  {
+    "id": 50,
+    "title": "Găng tay vải cách nhiệt lò nướng",
+    "category": "Dụng cụ làm bánh",
+    "price": 28000,
+    "img_path": "assets/images/products/Dung_cu/GangTayCachNhiet.png",
+    "subcategory": "Dụng cụ cơ bản"
+  }
+]
