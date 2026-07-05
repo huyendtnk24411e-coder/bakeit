@@ -1,0 +1,186 @@
+/* =========================================================
+   1. LAYOUT HEADER TRÊN CÙNG
+========================================================= */
+.main-header {
+    background: #faf6f3; /* Màu nền kem sáng đồng bộ toàn shop */
+    padding-top: 15px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    border-bottom: 1px solid #eedfd3;
+}
+.header-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logo-btn {
+    background: #e15b22; /* Màu cam thương hiệu Bake it */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-box input {
+    width: 350px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #eedfd3;
+    outline: none;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user-avatar {
+    font-size: 20px;
+    color: #4a3329;
+    cursor: pointer;
+}
+
+/* Thanh điều hướng Menu điều hướng */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    background: transparent; /* Loại bỏ nền trắng gây lệch màu */
+    padding: 12px 0;
+    margin-top: 15px;
+}
+.main-nav a {
+    color: #4a3329;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.main-nav a.active {
+    color: #e15b22;
+    border-bottom: 2px solid #e15b22;
+}
+
+/* =========================================================
+   2. GIỎ HÀNG DROPDOWN (QUAN TRỌNG: ĐỊNH VỊ ẨN/HIỆN CHUẨN)
+========================================================= */
+.cart-wrapper {
+    position: relative; /* Giữ điểm neo cố định */
+    padding: 10px 0;
+}
+.cart-trigger {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #4a3329;
+}
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #ff4d4f;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    line-height: 1;
+}
+
+/* Khung Popup Giỏ Hàng Nhỏ */
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: #ffffff;
+    border: 1px solid #eedfd3;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: none; /* BẮT BUỘC ẨN: Chỉ hiện khi kích hoạt class .show */
+    z-index: 1000;
+    text-align: left;
+}
+
+/* KHI CLICK VÀO TRIGGER THÌ CLASS .show ĐƯỢC THÊM VÀO -> HIỆN DROPDOWN */
+.cart-wrapper.show .cart-dropdown {
+    display: block !important;
+}
+
+.cart-dropdown-title {
+    font-size: 14px;
+    color: #4a3329;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #f3ebe6;
+    font-weight: 700;
+}
+.cart-dropdown-items {
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.cart-item-mini {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #faf6f3;
+}
+.item-mini-img {
+    width: 40px;
+    height: 40px;
+    background-color: #faf6f3;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.item-mini-details { flex-grow: 1; }
+.item-mini-name { font-size: 13px; font-weight: 600; color: #33221a; margin: 0 0 4px 0; }
+.item-mini-meta { font-size: 12px; color: #7c6b61; }
+.item-mini-price { color: #e15b22; }
+.item-mini-remove { background: none; border: none; color: #a0aec0; font-size: 18px; cursor: pointer; }
+
+.cart-dropdown-footer { border-top: 1px solid #f3ebe6; padding-top: 15px; }
+.cart-total-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 15px; }
+.cart-total-price { color: #e15b22; font-size: 16px; font-weight: 700; }
+.cart-action-buttons { display: flex; gap: 10px; }
+.btn-view-cart, .btn-checkout { flex: 1; padding: 8px 0; border-radius: 4px; font-size: 12px; font-weight: 600; cursor: pointer; text-align: center; }
+.btn-view-cart { background: #fff; border: 1px solid #4a3329; color: #4a3329; }
+.btn-checkout { background: #e15b22; border: none; color: #fff; }
+
+/* =========================================================
+   3. MEGA MENU
+========================================================= */
+.nav-item-dropdown { position: relative; }
+.nav-item-dropdown:hover .mega-menu { display: block; }
+.arrow-down { font-size: 10px; margin-left: 4px; display: inline-block; vertical-align: middle; }
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    background: #ffffff;
+    border: 1px solid #eedfd3;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+    display: none;
+    z-index: 999;
+}
+.mega-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; }
+.mega-column h4 { font-size: 13px; color: #e15b22; margin: 0 0 12px 0; font-weight: 700; border-bottom: 1px solid #f3ebe6; padding-bottom: 6px; }
+.mega-column ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.mega-column ul li a { font-size: 13px; color: #555 !important; font-weight: normal !important; text-decoration: none; }
+.mega-column ul li a strong { color: #33221a; font-weight: 600; }
